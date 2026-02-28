@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FoodLab Management — A visual presentation of technical milestones and sprint achievements." />
+  <title>FoodLab Management — Sprint Presentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+  <!-- Navigation -->
+  <nav id="main-nav" class="nav-bar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">🧪 FoodLab</a>
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+        <li><a href="#sprint-1" class="nav-link" data-section="sprint-1">Sprint 1</a></li>
+        <li><a href="#charts" class="nav-link" data-section="charts">Analytics</a></li>
+        <li><a href="#sprint-2" class="nav-link" data-section="sprint-2">Sprint 2</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== SECTION 1: HERO ===================== -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <img src="/hero-bg.png" alt="" class="hero-bg-img" />
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up">📋 Activity Report</p>
+      <h1 class="hero-title reveal-up">
+        <span class="gradient-text">FoodLab</span><br />Management
+      </h1>
+      <p class="hero-subtitle reveal-up">
+        A comprehensive overview of everything accomplished<br />during the development cycle.
+      </p>
+      <div class="hero-badges reveal-up">
+        <span class="badge">Vite</span>
+        <span class="badge">Laravel</span>
+        <span class="badge">Flutter</span>
+        <span class="badge">Nginx</span>
+        <span class="badge">SMTP</span>
+      </div>
+      <div class="scroll-indicator reveal-up">
+        <span>Scroll to explore</span>
+        <div class="scroll-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 4v16m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+    </div>
+    <div class="hero-particles" id="hero-particles"></div>
+  </section>
+
+  <!-- ===================== SECTION 2: SPRINT 1 ===================== -->
+  <section id="sprint-1" class="sprint-section">
+    <div class="section-container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Sprint 1</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Milestones</span></h2>
+        <p class="section-subtitle">Core backend infrastructure, security hardening, and server deployment</p>
+      </div>
+
+      <div class="sprint-grid">
+        <!-- Card 1: Email Verification -->
+        <div class="glass-card reveal-up" data-delay="0">
+          <div class="card-icon">📧</div>
+          <h3 class="card-title">Email Verification</h3>
+          <p class="card-desc">Secure user registration with SMTP-based email verification flow.</p>
+          <div class="card-flow">
+            <div class="flow-step">
+              <span class="flow-num">1</span>
+              <span>User hits register endpoint</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <span class="flow-num">2</span>
+              <span>Business SMTP sends mail</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <span class="flow-num">3</span>
+              <span>User clicks verify in Gmail</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step active">
+              <span class="flow-num">4</span>
+              <span>User verified ✓</span>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="tag">SMTP</span>
+            <span class="tag">Auth</span>
+            <span class="tag">Security</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Forgot Password -->
+        <div class="glass-card reveal-up" data-delay="0.1">
+          <div class="card-icon">🔑</div>
+          <h3 class="card-title">Forgot Password</h3>
+          <p class="card-desc">Password recovery flow with SMTP verification and secure credential reset.</p>
+          <div class="card-flow">
+            <div class="flow-step">
+              <span class="flow-num">1</span>
+              <span>User requests password reset</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <span class="flow-num">2</span>
+              <span>SMTP sends verification</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <span class="flow-num">3</span>
+              <span>Gmail redirect to app</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step active">
+              <span class="flow-num">4</span>
+              <span>Credentials updated ✓</span>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="tag">SMTP</span>
+            <span class="tag">Recovery</span>
+            <span class="tag">Redirect</span>
+          </div>
+        </div>
+
+        <!-- Card 3: App Version Check -->
+        <div class="glass-card reveal-up" data-delay="0.2">
+          <div class="card-icon">📱</div>
+          <h3 class="card-title">App Version Check</h3>
+          <p class="card-desc">Compares the version on the web admin panel with the mobile client to ensure compatibility.</p>
+          <div class="card-diagram">
+            <div class="diagram-box">Web Admin<br/><small>v2.1.0</small></div>
+            <div class="diagram-connector">
+              <span class="connector-label">compare</span>
+              <div class="connector-line"></div>
+            </div>
+            <div class="diagram-box">Mobile Client<br/><small>v2.0.8</small></div>
+          </div>
+          <div class="card-result">
+            <span class="result-badge warning">⚠ Update Required</span>
+          </div>
+          <div class="card-tags">
+            <span class="tag">Versioning</span>
+            <span class="tag">Mobile</span>
+            <span class="tag">Admin</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Request Logger -->
+        <div class="glass-card reveal-up" data-delay="0.3">
+          <div class="card-icon">📊</div>
+          <h3 class="card-title">Request Logger</h3>
+          <p class="card-desc">Kernel-level middleware that tracks and logs every HTTP request flowing through the project.</p>
+          <div class="card-code">
+            <pre><code><span class="code-comment">// Kernel Middleware</span>
+<span class="code-keyword">class</span> <span class="code-class">RequestLogger</span> {
+  <span class="code-func">handle</span>($request, $next) {
+    Log::info($request->method()
+      . ' ' . $request->url());
+    <span class="code-keyword">return</span> $next($request);
+  }
+}</code></pre>
+          </div>
+          <div class="card-tags">
+            <span class="tag">Middleware</span>
+            <span class="tag">Logging</span>
+            <span class="tag">Kernel</span>
+          </div>
+        </div>
+
+        <!-- Card 5: Race Condition Fix -->
+        <div class="glass-card reveal-up" data-delay="0.4">
+          <div class="card-icon">⚡</div>
+          <h3 class="card-title">Error Prevention & Race Condition</h3>
+          <p class="card-desc">Resolved legacy code issues where concurrent clients handling the same order caused data corruption.</p>
+          <div class="card-before-after">
+            <div class="ba-col bad">
+              <span class="ba-label">❌ Before</span>
+              <ul>
+                <li>Multiple clients process same order</li>
+                <li>Data inconsistency</li>
+                <li>Race conditions</li>
+              </ul>
+            </div>
+            <div class="ba-col good">
+              <span class="ba-label">✅ After</span>
+              <ul>
+                <li>Atomic locking mechanism</li>
+                <li>Consistent data state</li>
+                <li>Conflict resolution</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="tag">Concurrency</span>
+            <span class="tag">Legacy</span>
+            <span class="tag">Fix</span>
+          </div>
+        </div>
+
+        <!-- Card 6: Server Setup -->
+        <div class="glass-card reveal-up" data-delay="0.5">
+          <div class="card-icon">🖥️</div>
+          <h3 class="card-title">Campus Server Setup</h3>
+          <p class="card-desc">Full server deployment: Nginx web server, GitHub project via SSH remote, and SSL certificate for the domain.</p>
+          <div class="card-checklist">
+            <div class="check-item done">
+              <span class="check-icon">✓</span>
+              <span>Nginx web server configured</span>
+            </div>
+            <div class="check-item done">
+              <span class="check-icon">✓</span>
+              <span>GitHub project deployed via SSH</span>
+            </div>
+            <div class="check-item done">
+              <span class="check-icon">✓</span>
+              <span>SSL certificate installed</span>
+            </div>
+            <div class="check-item done">
+              <span class="check-icon">✓</span>
+              <span>Domain DNS configured</span>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="tag">DevOps</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">SSL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CHARTS SECTION ===================== -->
+  <section id="charts" class="charts-section">
+    <div class="section-container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Analytics</span>
+        <h2 class="section-title">Sprint 1 <span class="gradient-text">Breakdown</span></h2>
+        <p class="section-subtitle">Visual insights into task distribution and complexity</p>
+      </div>
+      <div class="charts-grid">
+        <div class="glass-card chart-card reveal-left">
+          <h3 class="chart-title">Task Complexity</h3>
+          <p class="chart-desc">Estimated effort level for each Sprint 1 deliverable</p>
+          <div class="chart-wrapper">
+            <canvas id="complexityChart"></canvas>
+          </div>
+        </div>
+        <div class="glass-card chart-card reveal-right">
+          <h3 class="chart-title">Task Distribution</h3>
+          <p class="chart-desc">Breakdown of Sprint 1 work by category</p>
+          <div class="chart-wrapper">
+            <canvas id="distributionChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 3: SPRINT 2 PLACEHOLDER ===================== -->
+  <section id="sprint-2" class="sprint-section sprint-2-section">
+    <div class="section-container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Sprint 2</span>
+        <h2 class="section-title">Coming <span class="gradient-text">Soon</span></h2>
+        <p class="section-subtitle">Sprint 2 milestones are currently being finalized and will be unveiled shortly.</p>
+      </div>
+      <div class="coming-soon-visual reveal-up">
+        <div class="pulse-ring"></div>
+        <div class="pulse-ring delay-1"></div>
+        <div class="pulse-ring delay-2"></div>
+        <div class="coming-soon-icon">🚀</div>
+      </div>
+      <p class="coming-soon-text reveal-up">Stay tuned for the next iteration</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 FoodLab Management — All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
