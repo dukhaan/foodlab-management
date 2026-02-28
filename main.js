@@ -70,7 +70,7 @@ ScrollTrigger.create({
 
 /* ============ NAV ACTIVE TRACKING ============ */
 const navLinks = document.querySelectorAll('.nav-link');
-const sections = ['hero', 'sprint-1', 'charts', 'sprint-2'];
+const sections = ['hero', 'milestones', 'charts'];
 
 sections.forEach((id) => {
   const el = document.getElementById(id);
@@ -202,37 +202,30 @@ function initComplexityChart() {
   const ctx = document.getElementById('complexityChart');
   if (!ctx) return;
 
+  const labels = [
+    'Email\nVerify', 'Forgot\nPwd', 'Version\nCheck', 'Req\nLogger',
+    'Race\nCondition', 'Server\nSetup', 'VA\nTopUp', 'FCM &\nMulti-Dev',
+    'API\nMaintain', 'Reimburse\nCSV', 'Midtrans\nGateway', 'CI/CD\nActions',
+    'Delivery\nOptions', 'Log\nMgmt', 'Redis\nCache', 'Codacy\nAnalysis',
+  ];
+
+  const data = [7, 6, 4, 5, 9, 8, 6, 8, 5, 6, 9, 8, 4, 7, 7, 5];
+
+  // Cycle through colors
+  const colorKeys = Object.values(chartColors);
+  const bgColors = data.map((_, i) => `${colorKeys[i % colorKeys.length]}cc`);
+  const borderColors = data.map((_, i) => colorKeys[i % colorKeys.length]);
+
   complexityChartInstance = new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: [
-        'Email\nVerification',
-        'Forgot\nPassword',
-        'Version\nCheck',
-        'Request\nLogger',
-        'Race\nCondition',
-        'Server\nSetup',
-      ],
+      labels,
       datasets: [
         {
           label: 'Complexity Score',
-          data: [7, 6, 4, 5, 9, 8],
-          backgroundColor: [
-            `${chartColors.purple}cc`,
-            `${chartColors.cyan}cc`,
-            `${chartColors.green}cc`,
-            `${chartColors.amber}cc`,
-            `${chartColors.red}cc`,
-            `${chartColors.pink}cc`,
-          ],
-          borderColor: [
-            chartColors.purple,
-            chartColors.cyan,
-            chartColors.green,
-            chartColors.amber,
-            chartColors.red,
-            chartColors.pink,
-          ],
+          data,
+          backgroundColor: bgColors,
+          borderColor: borderColors,
           borderWidth: 1,
           borderRadius: 8,
           borderSkipped: false,
@@ -264,7 +257,7 @@ function initComplexityChart() {
       scales: {
         x: {
           grid: { display: false },
-          ticks: { font: { size: 11 }, maxRotation: 0 },
+          ticks: { font: { size: 9 }, maxRotation: 45, minRotation: 0 },
         },
         y: {
           grid: { color: 'rgba(255,255,255,0.04)' },
@@ -287,16 +280,16 @@ function initDistributionChart() {
   distributionChartInstance = new Chart(ctx, {
     type: 'doughnut',
     data: {
-      labels: ['Authentication', 'DevOps', 'Error Handling', 'Monitoring', 'Versioning'],
+      labels: ['Payment & Finance', 'DevOps & CI/CD', 'Monitoring & Logging', 'Features & UX', 'Quality & Security'],
       datasets: [
         {
-          data: [30, 25, 20, 15, 10],
+          data: [25, 22, 18, 20, 15],
           backgroundColor: [
             `${chartColors.purple}dd`,
             `${chartColors.pink}dd`,
-            `${chartColors.red}dd`,
             `${chartColors.amber}dd`,
             `${chartColors.cyan}dd`,
+            `${chartColors.green}dd`,
           ],
           borderColor: 'rgba(7,7,13,0.8)',
           borderWidth: 3,

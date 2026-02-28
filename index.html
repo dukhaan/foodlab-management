@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="FoodLab Management — A visual presentation of technical milestones and sprint achievements." />
-  <title>FoodLab Management — Sprint Presentation</title>
+  <meta name="description" content="FoodLab Management — A visual presentation of technical milestones and achievements." />
+  <title>FoodLab Management — Technical Milestones</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -20,9 +20,8 @@
       <a href="#hero" class="nav-logo">🧪 FoodLab</a>
       <ul class="nav-links">
         <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
-        <li><a href="#sprint-1" class="nav-link" data-section="sprint-1">Sprint 1</a></li>
+        <li><a href="#milestones" class="nav-link" data-section="milestones">Milestones</a></li>
         <li><a href="#charts" class="nav-link" data-section="charts">Analytics</a></li>
-        <li><a href="#sprint-2" class="nav-link" data-section="sprint-2">Sprint 2</a></li>
       </ul>
     </div>
   </nav>
@@ -42,7 +41,7 @@
       <div class="hero-badges reveal-up">
         <span class="badge">Vite</span>
         <span class="badge">Laravel</span>
-        <span class="badge">Flutter</span>
+        <!-- <span class="badge">Flutter</span> -->
         <span class="badge">Nginx</span>
         <span class="badge">SMTP</span>
       </div>
@@ -56,13 +55,13 @@
     <div class="hero-particles" id="hero-particles"></div>
   </section>
 
-  <!-- ===================== SECTION 2: SPRINT 1 ===================== -->
-  <section id="sprint-1" class="sprint-section">
+  <!-- ===================== SECTION 2: TECHNICAL MILESTONES ===================== -->
+  <section id="milestones" class="sprint-section">
     <div class="section-container">
       <div class="section-header reveal-up">
-        <span class="section-tag">Sprint 1</span>
+        <span class="section-tag">Milestones</span>
         <h2 class="section-title">Technical <span class="gradient-text">Milestones</span></h2>
-        <p class="section-subtitle">Core backend infrastructure, security hardening, and server deployment</p>
+        <p class="section-subtitle">Core infrastructure, payment integration, DevOps, and quality assurance</p>
       </div>
 
       <div class="sprint-grid">
@@ -236,6 +235,246 @@
             <span class="tag">SSL</span>
           </div>
         </div>
+
+        <!-- ============ NEW CARDS ============ -->
+
+        <!-- Card 7: Coin Top-Up via VA (Bank Mandiri) -->
+        <div class="glass-card reveal-up" data-delay="0">
+          <div class="card-icon">🏦</div>
+          <h3 class="card-title">Coin Top-Up via VA (Bank Mandiri)</h3>
+          <p class="card-desc">Users can top up their coin balance through a Virtual Account issued by Bank Mandiri for seamless transactions.</p>
+          <div class="card-flow">
+            <div class="flow-step">
+              <span class="flow-num">1</span>
+              <span>User requests top-up</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <span class="flow-num">2</span>
+              <span>VA number generated</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <span class="flow-num">3</span>
+              <span>Bank Mandiri confirms</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step active">
+              <span class="flow-num">4</span>
+              <span>Balance updated ✓</span>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="tag">Payment</span>
+            <span class="tag">VA</span>
+            <span class="tag">Mandiri</span>
+          </div>
+        </div>
+
+        <!-- Card 8: Firebase Cloud Messaging & Multi-Device Login Fix -->
+        <div class="glass-card reveal-up" data-delay="0.1">
+          <div class="card-icon">🔔</div>
+          <h3 class="card-title">FCM Notifications & Multi-Device Fix</h3>
+          <p class="card-desc">Setup Firebase Cloud Messaging for push notifications and resolved multi-device login token conflicts.</p>
+          <div class="card-before-after">
+            <div class="ba-col bad">
+              <span class="ba-label">❌ Before</span>
+              <ul>
+                <li>Notification sent not to all users device</li>
+                <li>Stale FCM tokens</li>
+                <li>Multi-device login conflict</li>
+              </ul>
+            </div>
+            <div class="ba-col good">
+              <span class="ba-label">✅ After</span>
+              <ul>
+                <li>FCM token auto-refresh</li>
+                <li>Device session management</li>
+                <li>Targeted push delivery</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="tag">FCM</span>
+            <span class="tag">Push</span>
+            <span class="tag">Auth</span>
+          </div>
+        </div>
+
+        <!-- Card 9: Maintain Endpoint API & Web -->
+        <div class="glass-card reveal-up" data-delay="0.2">
+          <div class="card-icon">🔧</div>
+          <h3 class="card-title">Maintain Endpoint API & Web</h3>
+          <p class="card-desc">Continuous maintenance of API endpoints and web admin panel to ensure stability and compatibility.</p>
+          <div class="card-checklist">
+            <div class="check-item done">
+              <span class="check-icon">✓</span>
+              <span>API versioning & documentation</span>
+            </div>
+            <div class="check-item done">
+              <span class="check-icon">✓</span>
+              <span>Error handling standardized</span>
+            </div>
+            <div class="check-item done">
+              <span class="check-icon">✓</span>
+              <span>Rate limiting configured</span>
+            </div>
+            <div class="check-item done">
+              <span class="check-icon">✓</span>
+              <span>Web admin panel updated</span>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="tag">API</span>
+            <span class="tag">Maintenance</span>
+            <span class="tag">Web</span>
+          </div>
+        </div>
+
+        <!-- Card 10: Tenant Reimbursement with CSV Export -->
+        <div class="glass-card reveal-up" data-delay="0.3">
+          <div class="card-icon">💰</div>
+          <h3 class="card-title">Tenant Reimbursement & CSV Export</h3>
+          <p class="card-desc">Admin can reimburse tenant revenue by calculating earnings and exporting a CSV report for finance processing.</p>
+          <div class="card-flow">
+            <div class="flow-step">
+              <span class="flow-num">1</span>
+              <span>Admin selects tenant</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <span class="flow-num">2</span>
+              <span>Calculate revenue</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <span class="flow-num">3</span>
+              <span>Export CSV report</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step active">
+              <span class="flow-num">4</span>
+              <span>Tenant reimbursed ✓</span>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="tag">Finance</span>
+            <span class="tag">CSV</span>
+            <span class="tag">Admin</span>
+          </div>
+        </div>
+
+        <!-- Card 11: Midtrans Payment Gateway & Webhook -->
+        <div class="glass-card reveal-up" data-delay="0.4">
+          <div class="card-icon">💳</div>
+          <h3 class="card-title">Midtrans Payment Gateway & Webhook</h3>
+          <p class="card-desc">Integrated Midtrans for top-up and payment processing with webhook callbacks for real-time transaction updates.</p>
+          <div class="card-image-preview">
+            <img src="/midtrans-concept.jpg" alt="Midtrans payment gateway concept diagram" loading="lazy" />
+          </div>
+          <p class="card-image-caption">Midtrans integration architecture — snap token, webhook, & status sync</p>
+          <div class="card-tags">
+            <span class="tag">Payment</span>
+            <span class="tag">Midtrans</span>
+            <span class="tag">Webhook</span>
+          </div>
+        </div>
+
+        <!-- Card 12: CI/CD with GitHub Actions -->
+        <div class="glass-card reveal-up" data-delay="0.5">
+          <div class="card-icon">🚀</div>
+          <h3 class="card-title">CI/CD with GitHub Actions</h3>
+          <p class="card-desc">Automated build, test, and deployment pipeline using GitHub Actions for consistent and reliable releases.</p>
+          <div class="card-image-preview">
+            <img src="/cicd-github-action.jpg" alt="CI/CD GitHub Actions pipeline diagram" loading="lazy" />
+          </div>
+          <p class="card-image-caption">GitHub Actions workflow — push → build → test → deploy to server</p>
+          <div class="card-tags">
+            <span class="tag">CI/CD</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">DevOps</span>
+          </div>
+        </div>
+
+        <!-- Card 13: Delivery Options: Regular & Priority -->
+        <div class="glass-card reveal-up" data-delay="0">
+          <div class="card-icon">🚚</div>
+          <h3 class="card-title">Delivery Options: Regular & Priority</h3>
+          <p class="card-desc">Added flexible delivery options allowing users to choose between regular and priority delivery for their orders.</p>
+          <div class="card-delivery-options">
+            <div class="delivery-option">
+              <span class="option-icon">📦</span>
+              <span class="option-badge regular">Regular</span>
+              <ul>
+                <li>Standard queue</li>
+                <li>Normal processing</li>
+                <li>Free delivery</li>
+              </ul>
+            </div>
+            <div class="delivery-option">
+              <span class="option-icon">⚡</span>
+              <span class="option-badge priority">Priority</span>
+              <ul>
+                <li>Queue priority boost</li>
+                <li>Faster processing</li>
+                <li>Premium fee</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="tag">Delivery</span>
+            <span class="tag">UX</span>
+            <span class="tag">Feature</span>
+          </div>
+        </div>
+
+        <!-- Card 14: Log Management Setup -->
+        <div class="glass-card reveal-up" data-delay="0.1">
+          <div class="card-icon">📋</div>
+          <h3 class="card-title">Log Management Setup</h3>
+          <p class="card-desc">Centralized log management system for monitoring application health, debugging errors, and tracking performance.</p>
+          <div class="card-image-preview">
+            <img src="/log-management.jpg" alt="Log management system dashboard" loading="lazy" />
+          </div>
+          <p class="card-image-caption">Centralized log viewer — error tracking, request logs, & performance metrics</p>
+          <div class="card-tags">
+            <span class="tag">Logging</span>
+            <span class="tag">Monitoring</span>
+            <span class="tag">DevOps</span>
+          </div>
+        </div>
+
+        <!-- Card 15: Redis Caching -->
+        <div class="glass-card reveal-up" data-delay="0.2">
+          <div class="card-icon">⚡</div>
+          <h3 class="card-title">Redis Caching</h3>
+          <p class="card-desc">Implemented Redis as a caching layer to drastically reduce database load and improve response times across the app.</p>
+          <div class="card-image-preview">
+            <img src="/redis-foodlab.jpg" alt="Redis caching architecture for FoodLab" loading="lazy" />
+          </div>
+          <p class="card-image-caption">Redis caching layer — session store, query cache, & queue driver</p>
+          <div class="card-tags">
+            <span class="tag">Redis</span>
+            <span class="tag">Cache</span>
+            <span class="tag">Performance</span>
+          </div>
+        </div>
+
+        <!-- Card 16: Static Code Analysis with Codacy -->
+        <div class="glass-card reveal-up" data-delay="0.3">
+          <div class="card-icon">🔍</div>
+          <h3 class="card-title">Static Code Analysis with Codacy</h3>
+          <p class="card-desc">Integrated Codacy for automated code quality evaluation, tracking code smells, complexity, and security vulnerabilities.</p>
+          <div class="card-image-preview">
+            <img src="/codacy.jpg" alt="Codacy static code analysis dashboard" loading="lazy" />
+          </div>
+          <p class="card-image-caption">Codacy dashboard — code grade, issue breakdown, & PR quality gate</p>
+          <div class="card-tags">
+            <span class="tag">Codacy</span>
+            <span class="tag">Quality</span>
+            <span class="tag">Analysis</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -245,43 +484,25 @@
     <div class="section-container">
       <div class="section-header reveal-up">
         <span class="section-tag">Analytics</span>
-        <h2 class="section-title">Sprint 1 <span class="gradient-text">Breakdown</span></h2>
+        <h2 class="section-title">Milestones <span class="gradient-text">Breakdown</span></h2>
         <p class="section-subtitle">Visual insights into task distribution and complexity</p>
       </div>
       <div class="charts-grid">
         <div class="glass-card chart-card reveal-left">
           <h3 class="chart-title">Task Complexity</h3>
-          <p class="chart-desc">Estimated effort level for each Sprint 1 deliverable</p>
+          <p class="chart-desc">Estimated effort level for each milestone deliverable</p>
           <div class="chart-wrapper">
             <canvas id="complexityChart"></canvas>
           </div>
         </div>
         <div class="glass-card chart-card reveal-right">
           <h3 class="chart-title">Task Distribution</h3>
-          <p class="chart-desc">Breakdown of Sprint 1 work by category</p>
+          <p class="chart-desc">Breakdown of all milestones by category</p>
           <div class="chart-wrapper">
             <canvas id="distributionChart"></canvas>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ===================== SECTION 3: SPRINT 2 PLACEHOLDER ===================== -->
-  <section id="sprint-2" class="sprint-section sprint-2-section">
-    <div class="section-container">
-      <div class="section-header reveal-up">
-        <span class="section-tag">Sprint 2</span>
-        <h2 class="section-title">Coming <span class="gradient-text">Soon</span></h2>
-        <p class="section-subtitle">Sprint 2 milestones are currently being finalized and will be unveiled shortly.</p>
-      </div>
-      <div class="coming-soon-visual reveal-up">
-        <div class="pulse-ring"></div>
-        <div class="pulse-ring delay-1"></div>
-        <div class="pulse-ring delay-2"></div>
-        <div class="coming-soon-icon">🚀</div>
-      </div>
-      <p class="coming-soon-text reveal-up">Stay tuned for the next iteration</p>
     </div>
   </section>
 
